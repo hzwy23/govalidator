@@ -1029,7 +1029,7 @@ func (sv stringValues) get(i int) string   { return sv[i].String() }
 // first argument is min len.
 // second argument is max len.
 func IsWord(str string,params ...int) bool{
-	if IsNull(str){
+	if IsEmpty(str){
 		return false
 	}
 	return rxWord.MatchString(str)
